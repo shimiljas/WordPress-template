@@ -1,0 +1,199 @@
+/*	 Color Css
+================================================================*/
+/*  color
+--------------------*/
+.color-primary, .color-primary-a a{
+    color: #73bf44;
+}
+.color-secondery, .color-secondery-a a{
+    color: #0a1a2f
+}
+.color-black, .color-black-a a{
+    color: #151515;
+}
+.color-gray, .color-gray-a a{
+    color: #d2d2d2;
+}
+.color-lightgray, .color-lightgray-a a{
+    color: #a9a9a9;
+}
+.color-deepgray, .color-deepgray a{
+    color: #5e5e5e;
+}
+.color-white, .color-white-a a{
+    color: #fff;
+}
+
+/*  Background color 
+------------------------*/
+.bg-primary{
+    background-color: #73bf44;
+}
+.bg-secondery{
+    background-color: #0a1a2f;
+}
+.bg-dark{
+    background-color: #343a40;
+}
+.bg-lightgray{
+    background-color: #f8f8f8;
+}
+.bg-white{
+    background-color: #fff;
+}
+/*  All color
+-----------------------------*/
+/*  Color Primary
+-------------------------*/
+.icon-color-primary i,
+.blog-title a:hover,
+.contact-info ul li i,
+.date-title a,
+.btn-link{
+    color: #73bf44;
+}
+.section-title .title-top:before,
+.progress-bar,
+.service-item span:after,
+.controls .control:hover,.controls .control.mixitup-control-active,
+.owl-dot.active{
+    background-color: #73bf44 !important;
+}
+.about-img img,
+.sidebar-header{
+    border-color: #73bf44;
+}
+/*  Gradient Primary 
+-------------------------*/
+.gradient-primary,
+#sidebar{
+    background-image: linear-gradient(to right, #0a1a2f 0%, #73bf44 100%) !important;
+}
+/*  Color Secondery
+-------------------------*/
+.review i:before,
+.user-info,
+.blog-title a,
+.contact-info h6,
+.skill-progress,
+.date-title a:hover{
+    color: #0a1a2f;
+}
+.service-item i,
+.project-zoom,
+.controls .control,
+.owl-dot,
+#main-container.active .btn-fixed,
+#sidebarCollapse span,
+#main-container .btn-fixed,
+#sidebar ul li a:hover,
+#sidebar ul li a.active,
+.owl-nav button{
+    background-color: #0a1a2f !important;
+}
+
+/*  Color Black
+-------------------------*/
+ul.about-info li span,
+.tag a:hover,
+.btn-link:hover{
+    color: #151515;
+}
+
+.project figure:after{
+    background-color: #151515;
+}
+
+.form-control:focus{
+    border-color: #151515;
+}
+
+/*  Light Gray Color
+-------------------------*/
+.breadcrumb li a{
+    color: #d2d2d2;
+}
+.bg-light-gray,
+.progress{
+    background-color: #f8f8f8;
+}
+ul.about-info li,
+.text-area .tag,
+.comment-avater,
+.comment{
+    border-color: #f0f0f0;
+}
+/* color deepgray
+--------------------------*/
+.qualification td{
+    border-color: #5e5e5e;
+}
+
+/*  Color White 
+-------------------------*/
+.service-item i,
+.project figcaption,
+.controls .control,
+#sidebar ul li a,
+#sidebar ul li a:hover,
+#sidebar ul li a.active,
+.owl-nav button i,
+.copyright a:hover,
+.breadcrumb li a:hover{
+    color: #fff;
+}
+.btn-primary,
+#main-container.active #sidebarCollapse span,
+#main-container #sidebarCollapse span{
+    background-color: #fff !important;
+}
+#scroll span{
+    border-bottom-color: #fff;
+}
+body {
+    color: #6c757d;
+}
+
+/* Color Overlay 
+-------------------------*/
+.overlay-dark:before{
+    background-image: linear-gradient(0deg,rgba(85,71,58,0.5),rgba(207,161,68,0.1));
+}
+/*  Button Color 
+-------------------------*/
+.btn-primary{
+    color: #73bf44;
+    background-color: #fff;
+    border-color: #73bf44;
+}
+.btn-primary:link:hover,
+.btn-primary:visited:hover,
+.btn-primary:not(:disabled):not(.disabled):active{
+    color: #fff;
+    background-color: #73bf44;
+    border-color: #73bf44;
+}
+.btn-primary:after{
+    background: #73bf44;
+}
+.btn-secondery{
+    background-color: #0a1a2f;
+    color: #fff;
+    border-color: #0a1a2f;
+}
+.btn-secondery:hover{
+    background-color: transparent;
+    color: #0a1a2f;
+    border-color: #0a1a2f;
+}
+/*  Box Shadow
+---------------------------------------*/
+.service-item,
+.blog-thum,
+.price-plan{
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+    -ms-box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+    -o-box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+}

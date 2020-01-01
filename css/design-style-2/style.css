@@ -1,0 +1,656 @@
+/**
+    
+* Template Name: Potato - Personal Portfolio Template
+* Version: 1.5
+* Author: Themetrading
+* Email: themetrading@gmail.com
+* Developed By: Themetrading
+* First Release: 9 September 19
+* Last Update: 6 November 19
+* Author URL: www.themetrading.com
+
+**/
+
+/*  Main Container Css
+================================================================*/
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+#main-container{
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#main-container.active{
+    width: 100%;
+}
+#main-container.active .btn-fixed{
+    margin-left: 0
+}
+
+/*  Button Css
+================================================================*/
+.btn-fixed{
+    position: fixed;
+    top: 0;
+    margin-left: -40px;
+    z-index: 999;
+}
+.btn-primary{
+    border-radius: 0;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: hidden !important;
+    display: inline-table; 
+    border: 2px solid transparent;
+    z-index: 1;
+}
+.btn-primary:link,
+.btn-primary:link:visited{
+    position: relative;
+    overflow: hidden;
+}
+.btn-primary:link:after,
+.btn-primary:visited:after{
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+}
+.btn-primary:link:hover:after,
+.btn-primary:visited:hover:after{
+    height: 450%;
+}
+.btn-secondery{
+    border-radius: 0;
+}
+/* 04. Background Image
+================================================================*/
+.background1{
+    background-image: url(../../images/slider/1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.background-2{
+    background-image: url(../../images/dot.png);
+}
+/*  05.  Overlay CSS
+================================================================*/
+.overlay-dark{
+    position: relative
+}
+.overlay-dark:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*  06.  Title CSS
+================================================================*/
+.section-title .title-top{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    display: table;
+}
+.section-title .title-top:before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    top: 18px;
+    right: -50px;
+}
+.side-title{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+    left: 7px;
+    top: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    transform: rotate(-180deg);
+    margin: 0
+}
+/* 07. Sidebar Css
+================================================================*/
+#sidebar{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+}
+.sidebar-header{
+    border-bottom: 1px solid transparent;
+}
+#sidebar.active{
+    margin-left: -250px;
+}
+#sidebar .sidebar-header{
+    padding: 50px;
+}
+#sidebar ul li a{
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+}
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+#sidebarCollapse span{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#main-container.active #sidebarCollapse span{
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+/* 08. Main Banner Css
+===============================================================*/
+.main-banner{
+    width: 100%;
+    height: 100vh;
+	position: relative;
+    overflow: hidden;
+}
+.own-image img{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: table;
+  border: 4px solid transparent;
+}
+.cd-words-wrapper{
+    letter-spacing: 2px;
+}
+.cd-words-wrapper b{
+    font-weight: 700 !important;
+}
+/*  09. About us CSS
+================================================================*/
+ul.about-info li{
+    padding: 5px 0px;
+    border-bottom: 1px solid;
+}
+ul.about-info li span{
+    width: 80px;
+    display: inline-block;
+}
+
+.about-img img{
+    border: 7px solid transparent;
+
+}
+.qualification td{
+    padding: 8px 15px;
+    border-bottom: 1px solid transparent;
+}
+.qualification i{
+    font-size: 13px;
+    font-weight: 400;
+}
+/* progress-bar */
+.prgs-bar.fact-counter{
+    position: relative
+}
+.skill-progress .prgs-bar span{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-progress .progress {
+  margin: 5px 0 30px;
+  height: 12px;
+  overflow: visible;
+  border-radius: 0px;
+  font-size: 14px;
+}
+.skill-percent {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0
+}
+.skill-percent {
+  font-weight: bold
+}
+.progress-bar{
+  width: 0
+}
+/*  Counter
+------------------------*/
+.achivement  .count-num{
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 700;
+}
+/*  10.  Services Section
+================================================================*/
+.service-item{
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+.service-item:hover{
+    margin-top: 25px !important;
+}
+.service-item i:before{
+    line-height: 60px
+}
+.service-item i{
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: left;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.service-item span:after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: -5px;
+    top: 5px;
+}
+/*  11.  Portfolio Section
+================================================================*/
+.controls .control{
+  padding: 8px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  display: table;
+  float: left;
+  margin: 0 5px 0 0;
+  border: none;
+} 
+.btn-filter .filters .filter-tabs{
+  display:none; 
+}
+.filter-list .mix {
+  display:none; 
+}
+figure{
+    margin: 0;
+}
+.project {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.project figure:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.project img{
+    display: block;
+    width: 100%;
+}
+.project figcaption{
+    bottom: 0;
+    left: 0;
+    margin: 40px 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.project-title{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.project-category{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 7px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0 0;
+}
+.project-zoom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -72px;
+    opacity: 0;
+    overflow: hidden;
+}
+.project-zoom:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: FontAwesome;
+    font-size: 40px;
+}
+.project figure:hover .project-title{
+    opacity: 0;
+    top: 30px;
+}
+.project figure:hover .project-category{
+    letter-spacing: 32px;
+    opacity: 0;
+}
+.project figure:hover .project-zoom{
+    opacity: 1;
+}
+.project figure:hover:after{
+    opacity: 0;
+}
+/*  12.  Pricing Plan Css
+================================================================*/
+.price-plan{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.plan-header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-image: url(../../images/plan-header.png);
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.price{
+    margin: 0;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 56px;
+}
+.price span{
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.plan-list li{
+    font-size: 16px;
+    line-height: 36px;
+}
+.plan-title{
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.disable{
+    color: #a5a5a5;
+    text-decoration: line-through;
+}
+/* 13. Testimonial
+==================================================*/
+.owl-wrapper{
+    width: 100%;
+    max-width: 730px;
+    margin: 0px auto;
+    height: auto;
+    clear: both;
+    text-align: center;
+    cursor: e-resize;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.review p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.review i:before{
+    font-size: 46px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.owl-nav {
+    margin-top: 50px;
+}
+.owl-nav button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 10px;
+}
+/*  14.  Contact
+================================================================*/
+.contact-info ul li i{
+    float: left;
+}
+.contact-info h6{
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.contact-info ul li{
+    margin-bottom: 15px;
+    display: flex;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+/*  Back to top
+====================================================================*/
+#scroll{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    z-index: 9999;
+}
+#scroll span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+}
+/*  16.  Responsive Css
+================================================================*/
+/*
+// Medium devices (Laptop, 1100px and Down)
+============================================================*/
+@media (max-width: 1199.98px) {
+    h2 {
+        font-size: 21px;
+    }
+    #main-container{
+        width: calc(100% - 180px);
+    }
+    #sidebar{
+        width: 180px;
+    }
+    #sidebarCollapse span{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+    }
+    #sidebarCollapse span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+    #main-container.active #sidebarCollapse span{
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+	.side-title{
+		font-size: 30px
+	}
+    .my-info li{
+        width: 100%;
+    }
+    .service-item{
+        padding: 20px;
+    }
+   .service-item .thumb-title {
+        width: 100%;
+        display: table;
+        padding: 0;
+    }
+    .project figcaption{
+        margin: 20px;
+    }
+    .project-title{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0;
+    }
+    .review p{
+    font-size: 15px;
+    line-height: 25px;
+    }
+    .blog-title a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .content-area{
+        padding: 20px;
+    }
+    .contact-info ul li div{
+        margin-left: 10px !important;
+    }
+    .contact-info ul li{
+        display: inline-flex;
+        width: 100%;
+    }
+}
+/*
+// Small devices (tab, 992px and Down)
+============================================================*/
+@media (max-width: 991.98px) {
+	.owl-wrapper{
+		max-width: 620px
+	}
+}
+/*
+// Small devices (tablets, 767px and Down)
+============================================================*/
+@media (max-width: 767.98px) {
+    h2 {
+        font-size: 20px;
+    }
+    .btn-fixed{
+        margin-left: 0px;
+    }
+    #sidebar {
+        margin-left: -180px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #main-container {
+        width: 100%;
+    }
+    #main-container.active {
+        width: calc(100% - 180px);
+    }
+    .my-info li{
+        width: 50%;
+    }
+    .about-img{
+        margin-top: 30px;
+    }
+}
+/* 
+// iPhone (Original, 3G, 3GS, 4G)
+============================================================*/
+@media (max-width: 640px){
+    #sidebar {
+        width: 120px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #main-container {
+        width: 100%;
+    }
+    #main-container.active {
+        width: 100%;
+    }
+	#main-container.active .btn-fixed {
+		margin-left: 80px;
+	}
+    #sidebar .sidebar-header {
+        padding: 15px;
+		margin-top: 30px
+    }
+    .my-info li{
+        width: 100%;
+    }
+	.qualification td sup{
+		display: table;
+		margin-top: 15px
+	}
+}

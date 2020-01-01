@@ -1,0 +1,183 @@
+/*	 Color Css
+================================================================*/
+/*  color
+--------------------*/
+.color-primary, .color-primary-a a{
+    color: #98cb2b;
+}
+.color-secondery, .color-secondery-a a{
+    color: #55473a
+}
+.color-black, .color-black-a a{
+    color: #151515;
+}
+.color-gray, .color-gray-a a{
+    color: #d2d2d2;
+}
+.color-lightgray, .color-lightgray-a a{
+    color: #a9a9a9;
+}
+.color-deepgray, .color-deepgray a{
+    color: #5e5e5e;
+}
+.color-white, .color-white-a a{
+    color: #fff;
+}
+
+/*  Background color 
+------------------------*/
+.bg-primary{
+    background-color: #98cb2b !important;
+}
+.bg-secondery{
+    background-color: #151515 !important;
+}
+.bg-dark{
+    background-color: #343a40 !important;
+}
+.bg-lightgray{
+    background-color: #f8f8f8;
+}
+.bg-white{
+    background-color: #fff;
+}
+/*  All color
+-----------------------------*/
+/*  Color Primary
+-------------------------*/
+.color-primary, 
+.color-primary-a a,
+.carousel-indicators li.active,
+.review i:before,
+.icon-color-primary i, 
+.btn-link,
+.review i:before,
+.user-info{
+    color: #98cb2b !important;
+}
+.btn-primary:hover,
+.carousel-indicators li.active:before,
+.share-item li a:hover,
+.main-title .small-title:before,
+.progress-bar,
+.controls .control:hover,
+.controls .control.mixitup-control-active,
+.btn-filter span,
+.plan-header,
+#sidebar .list-unstyled li a.active,
+#sidebar .list-unstyled li a:hover,
+.owl-dot.active{
+    background-color: #98cb2b !important;
+}
+.about-img:before,
+.about-img:after{
+    border-color: #98cb2b;
+}
+.project-zoom{
+    background-color: rgba(152, 203, 43, 0.84);
+}
+
+/*  Color Secondery
+-------------------------*/
+.color-secondary, 
+.color-secondary-a a, 
+.share-item li a:hover, 
+.side-title.dark, 
+.controls .control:hover,
+.breadcrumb li a{
+    color: #151515;
+}
+.bg-secondary, 
+#sidebarCollapse span,
+.controls .control,
+.project figure:after,
+#sidebarCollapse.active span,
+.owl-dot{
+    background-color: #151515 !important;
+}
+.qualification td,
+.form-control:focus{
+	border-color: #151515
+}
+
+/*  Color Dark 
+-------------------------*/
+.blog-title a,
+.blog-title a:hover{
+    color: #0c0c0c
+}
+.bg-dark {
+    background-color: #0c0c0c !important;
+}
+/*  Color Gray 
+-------------------------*/
+.color-gray{
+    color: #f8f8f8 !important;
+}
+.bg-gray {
+    background-color: #f8f8f8 !important;
+}
+/*	Light Gray Color
+-------------------------*/
+.side-title{
+	color: #d2d2d2 !important;
+}
+/*  Color White 
+-------------------------*/
+.color-white, 
+.color-white-a a,
+.carousel-indicators li,
+#sidebar .list-unstyled li a,
+.project-title,
+.project-category,
+.project-zoom:after,
+.plan-header,
+.price,
+.price span,
+.controls .control{
+    color: #fff !important;
+}
+.bg-white{
+	background-color: #fff !important;
+}
+
+/* Border Light Color 
+-------------------------*/
+.share-item li a, #sidebar .list-unstyled li,
+.text-area .tag, .comment-avater, .comment{
+	border-color: #eee;
+}
+#sidebar .list-unstyled li a{
+	border-color: #0c0c0c
+}
+/* Color Overlay 
+-------------------------*/
+.overlay-dark:before{
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+/*	Button Color 
+-------------------------*/
+.btn-primary{
+    color: #98cb2b;
+    background-color: transparent;
+    border-color: #98cb2b !important;
+}
+.btn-primary:link:hover,
+.btn-primary:visited:hover,
+.btn-primary:not(:disabled):not(.disabled):active{
+    color: #151515 !important;
+    background-color: #98cb2b;
+}
+.btn-primary:after{
+    background: #98cb2b !important;
+}
+.btn-secondery{
+	background-color: #151515;
+	color: #fff;
+	border-color: #151515;
+}
+.btn-secondery:hover{
+	background-color: transparent;
+	color: #151515;
+	border-color: #151515;
+}

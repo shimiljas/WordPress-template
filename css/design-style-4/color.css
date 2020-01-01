@@ -1,0 +1,184 @@
+/*	 Color Css
+================================================================*/
+/*  color
+--------------------*/
+.color-primary, .color-primary-a a{
+    color: #cfa144;
+}
+.color-secondery, .color-secondery-a a{
+    color: #151515
+}
+.color-black, .color-black-a a{
+    color: #151515;
+}
+.color-gray, .color-gray-a a{
+    color: #d2d2d2;
+}
+.color-lightgray, .color-lightgray-a a{
+    color: #a9a9a9;
+}
+.color-deepgray, .color-deepgray a{
+    color: #5e5e5e;
+}
+.color-white, .color-white-a a{
+    color: #fff;
+}
+
+/*  Background color 
+------------------------*/
+.bg-primary{
+    background-color: #cfa144;
+}
+.bg-secondery{
+    background-color: #151515;
+}
+.bg-dark{
+    background-color: #343a40;
+}
+.bg-lightgray{
+    background-color: #f8f8f8;
+}
+.bg-white{
+    background-color: #fff;
+}
+/*  All color
+-----------------------------*/
+/*  Color Primary
+-------------------------*/
+.color-primary, 
+.color-primary-a a,
+.icon-color-primary i,
+.btn-link,
+.blog-title a:hover,
+.main-nav .navbar-nav .nav-item .nav-link.active,
+.review i:before,
+.user-info{
+    color: #f6b312 !important;
+}
+.progress-bar,
+.controls .control:hover,
+.controls .control.mixitup-control-active,
+.share-item li a:hover,
+.main-title .small-title:before,
+.btn-filter span,
+.plan-header,
+.main-nav .navbar-nav .nav-item .nav-link.active:before,
+.service-item span:after,
+.owl-dot.active{
+    background-color: #f6b312 !important;
+}
+.project-zoom{
+    background-color: rgba(246, 179, 18, 0.8);
+}
+#scroll span{
+	border-bottom-color: #fff
+}
+/*  Gradient Primary 
+-------------------------*/
+.gradient-primary{
+    background-image: linear-gradient(to right, #d0970d 0%, #f6b312 100%) !important;
+}
+/*  Color Secondery
+-------------------------*/ 
+.color-secondary-a a, 
+.share-item li a:hover, 
+.side-title.dark, 
+.controls .control:hover,
+.breadcrumb li a{
+    color: #151515;
+}
+.bg-secondary,
+.controls .control,
+.project figure:after,
+.nav-scroll,
+.service-item i,
+.owl-dot{
+    background-color: #151515 !important;
+}
+.qualification td,
+.form-control:focus{
+	border-color: #151515
+}
+
+/*  Color Dark 
+-------------------------*/
+.blog-title a,
+.blog-title a:hover{
+    color: #0c0c0c
+}
+.bg-dark {
+    background-color: #0c0c0c !important;
+}
+/*  Color Gray 
+-------------------------*/
+.color-gray{
+    color: #f8f8f8 !important;
+}
+.bg-gray {
+    background-color: #f8f8f8 !important;
+}
+/*	Light Gray Color
+-------------------------*/
+.side-title{
+	color: #d2d2d2 !important;
+}
+/*  Color White 
+-------------------------*/
+.color-white, 
+.color-white-a a,
+.project-title,
+.project-category,
+.project-zoom:after,
+.plan-header,
+.price,
+.price span,
+.controls .control,
+.main-nav .navbar-light .navbar-nav .nav-link{
+    color: #fff !important;
+}
+.bg-white{
+	background-color: #fff !important;
+}
+
+/* Border Light Color 
+-------------------------*/
+.share-item li a, 
+#sidebar .list-unstyled li,
+.text-area .tag, .comment-avater, .comment{
+	border-color: #eee;
+}
+#sidebar .list-unstyled li a{
+	border-color: #0c0c0c
+}
+/* Color Overlay 
+-------------------------*/
+.overlay-dark:before, 
+#main-banner .mainbanner-content{
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+/*	Button Color 
+-------------------------*/
+.btn-primary{
+    color: #f6b312;
+    background-color: transparent;
+    border-color: #f6b312 !important;
+}
+.btn-primary:link:hover,
+.btn-primary:visited:hover,
+.btn-primary:not(:disabled):not(.disabled):active{
+    color: #151515 !important;
+    background-color: #f6b312;
+}
+.btn-primary:after{
+    background: #f6b312 !important;
+}
+.btn-secondery{
+	background-color: #151515;
+	color: #fff;
+	border-color: #151515;
+}
+.btn-secondery:hover{
+	background-color: transparent;
+	color: #151515;
+	border-color: #151515;
+}
